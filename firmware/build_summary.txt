@@ -1,0 +1,53 @@
+  CC    ../../../../arduino-1.6.7/hardware/arduino/avr/cores/arduino/wiring.c
+  CC    ../../../../arduino-1.6.7/hardware/arduino/avr/cores/arduino/wiring_analog.c
+  CC    ../../../../arduino-1.6.7/hardware/arduino/avr/cores/arduino/wiring_digital.c
+  CC    ../../../../arduino-1.6.7/hardware/arduino/avr/cores/arduino/wiring_pulse.c
+  CC    ../../../../arduino-1.6.7/hardware/arduino/avr/cores/arduino/wiring_shift.c
+  CC    ../../../../arduino-1.6.7/hardware/arduino/avr/cores/arduino/WInterrupts.c
+  CC    ../../../../arduino-1.6.7/hardware/arduino/avr/cores/arduino/hooks.c
+  CXX   ../../../../arduino-1.6.7/hardware/arduino/avr/cores/arduino/WMath.cpp
+  CXX   ../../../../arduino-1.6.7/hardware/arduino/avr/cores/arduino/WString.cpp
+  CXX   ../../../../arduino-1.6.7/hardware/arduino/avr/cores/arduino/Print.cpp
+  CXX   Marlin_main.cpp
+  CXX   MarlinSerial.cpp
+  CXX   Sd2Card.cpp
+  CXX   SdBaseFile.cpp
+  CXX   SdFatUtil.cpp
+  CXX   SdFile.cpp
+  CXX   SdVolume.cpp
+  CXX   planner.cpp
+  CXX   stepper.cpp
+  CXX   temperature.cpp
+  CXX   cardreader.cpp
+  CXX   configuration_store.cpp
+  CXX   watchdog.cpp
+  CXX   ../../../../arduino-1.6.7/hardware/arduino/avr/libraries/SPI/SPI.cpp
+  CXX   servo.cpp
+  CXX   ../../../../arduino-1.6.7/hardware/arduino/avr/cores/arduino/Tone.cpp
+  CXX   ultralcd.cpp
+  CXX   digipot_mcp4451.cpp
+  CXX   dac_mcp4728.cpp
+  CXX   vector_3.cpp
+  CXX   qr_solve.cpp
+  CXX   buzzer.cpp
+  CXX   stopwatch.cpp
+  CXX   ../../../../arduino-1.6.7/libraries/LiquidCrystal/src/LiquidCrystal.cpp
+  CXX   ../../../../arduino-1.6.7/hardware/arduino/avr/cores/arduino/main.cpp
+  CXX   applet/Marlin.elf
+  COPY  applet/Marlin.hex
+
+
+AVR Memory Usage
+----------------
+Device: atmega2560
+
+Program:   54568 bytes (20.8% Full)
+(.text + .data + .bootloader)
+
+Data:       2987 bytes (36.5% Full)
+(.data + .bss + .noinit)
+
+
+   text	   data	    bss	    dec	    hex	filename
+  54164	    404	   2583	  57151	   df3f	applet/Marlin.elf
+

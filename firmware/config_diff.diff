@@ -1,0 +1,66 @@
+108c108
+< #define MOTHERBOARD 7
+---
+>   #define MOTHERBOARD BOARD_RAMPS_14_EFB
+185c185
+< #define TEMP_SENSOR_0 -1
+---
+> #define TEMP_SENSOR_0 1
+189c189
+< #define TEMP_SENSOR_BED 20
+---
+> #define TEMP_SENSOR_BED 0
+196c196
+< #define TEMP_RESIDENCY_TIME 6      // (seconds)
+---
+> #define TEMP_RESIDENCY_TIME 10  // (seconds)
+385,390c385,390
+< const bool X_MIN_ENDSTOP_INVERTING = true;      // set to true to invert the logic of the endstop.
+< const bool Y_MIN_ENDSTOP_INVERTING = true;      // set to true to invert the logic of the endstop.
+< const bool Z_MIN_ENDSTOP_INVERTING = true;      // set to true to invert the logic of the endstop.
+< const bool X_MAX_ENDSTOP_INVERTING = true;      // set to true to invert the logic of the endstop.
+< const bool Y_MAX_ENDSTOP_INVERTING = true;      // set to true to invert the logic of the endstop.
+< const bool Z_MAX_ENDSTOP_INVERTING = true;      // set to true to invert the logic of the endstop.
+---
+> const bool X_MIN_ENDSTOP_INVERTING = false; // set to true to invert the logic of the endstop.
+> const bool Y_MIN_ENDSTOP_INVERTING = false; // set to true to invert the logic of the endstop.
+> const bool Z_MIN_ENDSTOP_INVERTING = false; // set to true to invert the logic of the endstop.
+> const bool X_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic of the endstop.
+> const bool Y_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic of the endstop.
+> const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic of the endstop.
+464,466c464,466
+< #define INVERT_X_DIR true
+< #define INVERT_Y_DIR false
+< #define INVERT_Z_DIR true
+---
+> #define INVERT_X_DIR false
+> #define INVERT_Y_DIR true
+> #define INVERT_Z_DIR false
+478c478
+< // Be sure you have this distance over your Z_MAX_POS 200
+---
+>                                     // Be sure you have this distance over your Z_MAX_POS in case.
+496,497c496,497
+< #define X_MAX_POS 205
+< #define Y_MAX_POS 205
+---
+> #define X_MAX_POS 200
+> #define Y_MAX_POS 200
+686,688c686,688
+< #define DEFAULT_AXIS_STEPS_PER_UNIT {78.7402, 78.7402, 533.3333333, 865.888}      // default steps per unit for Ultimaker
+< #define DEFAULT_MAX_FEEDRATE {350, 350, 10, 25}      // (mm/sec)
+< #define DEFAULT_MAX_ACCELERATION {9000, 9000, 200, 10000}      // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
+---
+> #define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,4000,500}  // default steps per unit for Ultimaker
+> #define DEFAULT_MAX_FEEDRATE          {300, 300, 5, 25}    // (mm/sec)
+> #define DEFAULT_MAX_ACCELERATION      {3000,3000,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
+730c730
+< //  #define EEPROM_CHITCHAT // Please keep turned on if you can.
+---
+>   #define EEPROM_CHITCHAT // Please keep turned on if you can.
+1032c1032
+< #define FAST_PWM_FAN
+---
+> //#define FAST_PWM_FAN
+1133d1132
+< 
